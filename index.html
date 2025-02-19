@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บไซต์แรกของฉัน</title>
+    <title>AI Image & Video Creator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>นี่คือเว็บไซต์แรกของฉันที่สร้างด้วย HTML, CSS และ JavaScript!</p>
-        <button onclick="changeText()">คลิกเพื่อเปลี่ยนข้อความ</button>
-        <p id="text">ข้อความนี้จะเปลี่ยน</p>
-    </main>
-    <script src="script.js"></script>
+    
+    <section id="home">
+        <h2>Welcome to AI Image & Video Creator</h2>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Generate AI-powered images</li>
+            <li>Convert images to animated videos</li>
+            <li>Multiple art styles</li>
+            <li>Cloud-based processing</li>
+            <li>User-friendly interface</li>
+        </ul>
+    </section>
+    
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="plan">
+            <h3>Free</h3>
+            <p>Basic AI image generation</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan premium">
+            <h3>Premium</h3>
+            <p>Full access to AI tools</p>
+            <button>Subscribe</button>
+        </div>
+        <div class="plan enterprise">
+            <h3>Enterprise</h3>
+            <p>Custom AI solutions for businesses</p>
+            <button>Contact Us</button>
+        </div>
+    </section>
+    
+    <section id="login">
+        <h2>Login / Register</h2>
+        <form id="loginForm" action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Sign Up</a></p>
+        <p><a href="#forgot-password">Forgot Password?</a></p>
+        <div class="social-login">
+            <p>Or login with:</p>
+            <button class="google-login">Login with Google</button>
+            <button class="facebook-login">Login with Facebook</button>
+        </div>
+    </section>
 </body>
 </html>
