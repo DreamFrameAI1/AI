@@ -1,502 +1,524 @@
-/* รีเซ็ตค่าเริ่มต้น */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* ตั้งค่าสีพื้นหลังและตัวอักษร */
-body {
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-    overflow-x: hidden;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ส่วนหัว */
-header {
-    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    animation: fadeIn 1s ease-out;
-}
-
-/* เมนูนำทาง */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff;
-}
-
-/* ส่วนของ Section */
-section {
-    margin: 50px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
-    width: 80%;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    animation: fadeIn 1.5s ease-out;
-}
-
-/* ปุ่ม */
-button {
-    background: linear-gradient(90deg, #ff00ff, #6a0dad);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
-}
-
-button:hover {
-    background: linear-gradient(90deg, #6a0dad, #ff00ff);
-    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
-    transform: scale(1.05);
-}
-
-/* ช่องใส่ข้อมูล */
-input {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #ff00ff;
-    border-radius: 8px;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 10px #ff00ff;
-    border-color: #ff00ff;
-}
-
-/* แผนราคาต่างๆ */
-.plan {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    transition: 0.3s ease-in-out;
-}
-
-.plan:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0A0A0A;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.user-controls button {
-    background-color: #0D6EFD;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero .highlight {
-    color: #0D6EFD;
-}
-
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.feature-card {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-.feature-card button {
-    background-color: #0D6EFD;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.trending {
-    padding: 30px;
-}
-
-.video-grid {
-    display: flex;
-    gap: 15px;
-}
-
-.video-card img {
-    width: 200px;
-    border-radius: 10px;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0A0A0A;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #111;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ccc;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-nav ul li .icon {
-    margin-right: 10px;
-}
-
-nav ul li:hover, .active {
-    background-color: #0D6EFD;
-    color: white;
-}
-
-.active a {
-    color: white;
-}
-
-main {
-    margin-left: 270px;
-    flex: 1;
-    padding: 20px;
-}
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.topbar .highlight {
-    color: #0D6EFD;
-}
-
-.user-controls button {
-    background-color: #0D6EFD;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.feature-card {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-.feature-card button {
-    background-color: #0D6EFD;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.trending {
-    padding: 30px;
-}
-
-.video-grid {
-    display: flex;
-    gap: 15px;
-}
-
-.video-card img {
-    width: 200px;
-    border-radius: 10px;
-}
-.sidebar {
-    width: 250px;
-    background-color: #111;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white;
-    text-align: left;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-    transition: 0.3s;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ccc;
-    font-size: 18px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-nav ul li .icon {
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-nav ul li:hover, .active {
-    background-color: #0D6EFD;
-}
-
-.active a {
-    color: white;
-}
-.sidebar {
-    width: 220px;  /* ปรับขนาดให้เล็กลง */
-    background-color: #111;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-}
-
-nav ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-}
-
-nav ul li .icon {
-    font-size: 18px;
-    margin-right: 10px;  /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
-}
-/* Reset ค่าเริ่มต้น */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ทำให้ navbar เป็นแนวตั้งและชิดซ้าย */
-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh; /* ให้ Navbar สูงเต็มจอ */
-    width: 220px; /* ปรับขนาดความกว้างของเมนู */
-    background-color: #111; /* สีพื้นหลัง */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 20px;
-    z-index: 1000; /* ทำให้ Navbar อยู่ด้านบน */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-/* ปรับแต่งเมนู */
-nav ul {
-    list-style-type: none;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+.left img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #222;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: black;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    width: 100%;
+    display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 15px 20px;
+a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #333; /* เปลี่ยนสีเมื่อชี้เมาส์ */
-}
-
-/* ป้องกันเนื้อหาอื่นถูกบัง */
-body {
-    margin-left: 220px; /* เลื่อนเนื้อหาให้ไม่ทับกับ Navbar */
 }
 /* รีเซ็ตค่าเริ่มต้น */
-* {
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* ทำให้ navbar เป็นแถบแนวตั้ง */
-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh; /* ให้ Navbar สูงเต็มจอ */
-    width: 220px; /* ปรับขนาดความกว้าง */
-    background-color: #111; /* สีพื้นหลัง */
-    display: flex;
-    flex-direction: column; /* เรียงเมนูเป็นแนวตั้ง */
-    align-items: flex-start;
-    padding-top: 20px;
-    z-index: 1000;
+/* Section: Creativity Unleashed */
+.hero {
+    margin-top: 50px;
 }
 
-/* ปรับแต่งเมนู */
-nav ul {
-    list-style-type: none;
-    width: 100%;
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-nav ul li {
-    width: 100%;
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-nav ul li a {
-    display: block;
-    width: 100%;
-    padding: 15px 20px;
+/* ปุ่ม Get Start */
+.get-start {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    background-color: #007bff;
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background 0.3s;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #333; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+.get-start:hover {
+    background-color: #0056b3;
 }
 
-/* ป้องกันเนื้อหาอื่นถูกบัง */
+/* กรอบ Login */
+.login-container {
+    width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* ช่องใส่ Email / Password */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* ปุ่ม Login */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
+
+/* ปุ่มโซเชียล */
+.social-login {
+    margin-top: 15px;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google:hover {
+    background-color: #c1351d;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+/* รีเซ็ตค่าเริ่มต้น */
 body {
-    margin-left: 220px; /* เลื่อนเนื้อหาให้ไม่ทับกับ Navbar */
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+/* กรอบ Login */
+.login-container {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(183, 0, 255, 0.5);
+}
+
+/* ช่องใส่ Email / Password */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+}
+
+/* ปุ่ม Login */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #b700ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #8a00cc;
+}
+
+/* ปุ่มโซเชียล */
+.social-login {
+    margin-top: 15px;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google:hover {
+    background-color: #c1351d;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+/* ปุ่ม Get Started */
+.get-started-btn {
+    background: linear-gradient(135deg, #b700ff, #8a00cc);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(183, 0, 255, 0.5);
+}
+
+/* เอฟเฟกต์ Hover */
+.get-started-btn:hover {
+    background: linear-gradient(135deg, #8a00cc, #b700ff);
+    box-shadow: 0px 0px 15px rgba(183, 0, 255, 0.8);
+}
+/* ตั้งค่า Background */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a00f4, #b100e8, #d00000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ใส่ Grid (เส้นตาราง) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ใส่ Glow Effect */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 70%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* ตัวอักษร */
+.hero-text {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 3;
+}
+/* ตั้งค่าพื้นฐาน */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #7b2ff7, #ff4664);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* ปุ่ม Get Started */
+.get-started-btn {
+    background: linear-gradient(90deg, #ff7eb3, #ff4664);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.get-started-btn:hover {
+    opacity: 0.8;
+}
+
+/* กล่อง Login */
+.login-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #7b2ff7, #ff4664);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+/* Social Login */
+.social-login {
+    margin-top: 15px;
+}
+
+.google, .facebook {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.facebook {
+    background-color: #4267b2;
+    color: white;
+}
+body {
+    background: linear-gradient(135deg, #0d0d0d, #001f3f, #00FFFF);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+h1, h2 {
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* ฟ้าไฟฟ้าเรืองแสง */
+}
+button {
+    background-color: transparent;
+    color: #00FFFF;
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+}
+button:hover {
+    background-color: #00FFFF;
+    color: #000;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+}
+.login-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    width: 300px;
+    margin: 50px auto;
+}
+body {
+    background: linear-gradient(to bottom, #00FFFF, #001f3f, #0d0d0d);  
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+body {
+    background: linear-gradient(to bottom, #00bfff 0%, #292b36 50%, #0d0d0d 100%);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* เพิ่มเส้นตารางจาง ๆ */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+
