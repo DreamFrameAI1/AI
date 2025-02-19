@@ -3,54 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Creative Studio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Neon Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 3px #66fcf1, 0 0 5px #45a29e; }
+            50% { text-shadow: 0 0 8px #66fcf1, 0 0 12px #45a29e; }
+            100% { text-shadow: 0 0 3px #66fcf1, 0 0 5px #45a29e; }
+        }
+
+        .top-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background: rgba(15, 15, 15, 0.8);
+            padding: 12px 25px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(102, 252, 241, 0.3);
+            box-shadow: 0 0 12px rgba(102, 252, 241, 0.2);
+        }
+
+        .top-navbar .icon {
+            font-size: 18px;
+            margin-left: 20px;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .top-navbar .icon:hover {
+            color: #66fcf1;
+            text-shadow: 0 0 6px #66fcf1;
+        }
+
+        .top-navbar .credits {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(45deg, #13232f, #1f3d49);
+            padding: 6px 15px;
+            border-radius: 18px;
+            font-size: 13px;
+            font-weight: bold;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .top-navbar .credits img {
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+        }
+
+        .top-navbar .profile img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 1px solid #66fcf1;
+            transition: 0.3s;
+        }
+
+        .top-navbar .profile img:hover {
+            box-shadow: 0 0 6px #66fcf1;
+        }
+
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background: rgba(15, 15, 15, 0.8);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1100;
+            backdrop-filter: blur(8px);
+            border-right: 1px solid rgba(102, 252, 241, 0.3);
+            box-shadow: 3px 0 10px rgba(102, 252, 241, 0.2);
+        }
+
+        .web-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(102, 252, 241, 0.3);
+        }
+
+        .web-icon img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .sidebar ul {
+            padding-left: 0;
+        }
+
+        .sidebar ul li {
+            list-style: none;
+            padding: 10px 0;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background: rgba(102, 252, 241, 0.2);
+            padding-left: 12px;
+            border-radius: 8px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding-left: 10px;
+            text-align: left;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li:hover a {
+            color: #66fcf1;
+            text-shadow: 0 0 6px #66fcf1;
+        }
+    </style>
 </head>
 <body>
-    <aside class="sidebar">
-        <h1>KLING AI</h1>
+
+    <nav class="top-navbar">
+        <span class="icon">🔔</span>
+        <div class="credits">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="star"> 
+            <span>20 | Free trial</span>
+        </div>
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile">
+        </div>
+    </nav>
+
+    <nav class="sidebar">
+        <div class="web-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Website Icon">
+        </div>
         <ul>
-            <li class="active">Home</li>
-            <li>Explore</li>
-            <li>Events</li>
-            <li>AI Images</li>
-            <li>AI Videos</li>
-            <li>My Creatives</li>
-            <li>My Models</li>
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="explorer.html">🔍 Explorer</a></li>
+            <li><a href="create-image.html">🖼 Create Image</a></li>
+            <li><a href="create-video.html">🎥 Create Video</a></li>
         </ul>
-    </aside>
-    
-    <main class="content">
-        <header>
-            <h2>Next-Generation AI Creative Studio</h2>
-            <button class="upgrade">Upgrade Plan</button>
-            <button class="api-calls">API Calls</button>
-            <div class="profile-icon"></div>
-        </header>
-        
-        <section class="ai-options">
-            <div class="option">AI Images</div>
-            <div class="option">AI Videos</div>
-            <div class="option">Effects</div>
-        </section>
-        
-        <section class="trending">
-            <h3>Trending Shorts</h3>
-            <div class="shorts">
-                <div class="short">Ophelia</div>
-                <div class="short">Rengifo</div>
-                <div class="short">Sunny-side-up Egg</div>
-            </div>
-        </section>
-        
-        <section class="trending">
-            <h3>Trending Creatives</h3>
-            <div class="creatives">
-                <div class="creative">Creative 1</div>
-                <div class="creative">Creative 2</div>
-                <div class="creative">Creative 3</div>
-            </div>
-        </section>
-    </main>
+    </nav>
+
 </body>
 </html>

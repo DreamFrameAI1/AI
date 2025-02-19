@@ -463,62 +463,91 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
 }
-h1, h2 {
-    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* ฟ้าไฟฟ้าเรืองแสง */
-}
-button {
-    background-color: transparent;
-    color: #00FFFF;
-    border: 2px solid rgba(0, 255, 255, 0.8);
-    padding: 10px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
-}
-button:hover {
-    background-color: #00FFFF;
-    color: #000;
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+body {
+    background: linear-gradient(to bottom, #00ffff, #000000); /* ไล่สีจากฟ้าไฟฟ้าไปดำ */
+    height: 100vh; /* ปรับให้เต็มจอ */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .login-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85); /* พื้นหลังสีดำเข้มขึ้น */
+    border: 2px solid rgba(0, 255, 255, 0.8); /* เส้นขอบเรืองแสงสีฟ้า */
     padding: 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 255, 255, 0.8);
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
-    width: 300px;
-    margin: 50px auto;
+    border-radius: 12px; /* ขอบโค้งมน */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.6); /* เงาเรืองแสง */
+    backdrop-filter: blur(8px); /* เอฟเฟกต์เบลอพื้นหลัง */
 }
-body {
-    background: linear-gradient(to bottom, #00FFFF, #001f3f, #0d0d0d);  
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    min-height: 100vh;
-}
-body {
-    background: linear-gradient(to bottom, #00bfff 0%, #292b36 50%, #0d0d0d 100%);
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    min-height: 100vh;
-    position: relative;
+/* Reset ค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* เพิ่มเส้นตารางจาง ๆ */
-body::before {
-    content: "";
-    position: absolute;
+/* จัดรูปแบบพื้นหลัง */
+body {
+    display: flex;
+    background: linear-gradient(to bottom, #0d1b2a, #000000); /* ไล่สี น้ำเงินเข้ม -> ดำ */
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* สีดำโปร่งแสง */
+    border-right: 2px solid rgba(255, 255, 255, 0.1); /* กรอบสีจาง */
+    padding: 20px;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-    z-index: 0;
+}
+
+/* โปรไฟล์ผู้ใช้ */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* รายการเมนู */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background: rgba(0, 200, 255, 0.3); /* สีฟ้าเรืองแสง */
+}
+
+/* ส่วนเนื้อหาหลัก */
+.content {
+    margin-left: 270px; /* ขยับให้พ้น Sidebar */
+    padding: 20px;
+    flex: 1;
 }
 
 
